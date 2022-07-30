@@ -1,0 +1,31 @@
+.logos
+    &__inner
+        max-width: 1300px
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 50px
+        padding: 80px 25px
+    &__x
+        font-weight: bold
+        font-size: 25px
+    &__logo
+        position: relative
+        z-index: 2
+        &.logos__logo--center
+            display: block
+            margin: 0 auto
+
+@media (max-width: 750px)
+    .logos
+        &__inner
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+
+@media (max-width: 500px)
+    .logos
+        &__inner
+            gap: 25px
+            padding: 40px 25px

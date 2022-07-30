@@ -1,0 +1,54 @@
+.list
+    list-style: none
+    width: 55%
+    &.list--mid
+        margin: 0 auto
+        max-width: 430px
+    &__header
+        position: relative
+        font-size: 24px
+        line-height: 44px
+        padding: 0px 0px 50px 0px
+        font-weight: normal
+        z-index: 2
+        &.list__header--mid
+            text-align: center
+            padding: 0px 25px
+    &__item
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-bottom: 35px
+    &__number
+        position: relative
+        font-family: "Minecraft"
+        text-align: center
+        line-height: 38px
+        width: 38px
+        height: 38px
+        margin-right: 36px
+        border: 2px solid black
+        border-radius: 50%
+        font-size: 24px
+        z-index: 2
+        &.list__number--none
+            opacity: 0
+    &__text
+        position: relative
+        width: calc(100% - 74px)
+        font-size: 16px
+        line-height: 24px
+        z-index: 2
+    &__link
+        color: black
+
+@media (max-width: 850px)
+    .list
+        width: 100%
+        &.list--mid
+            max-width: none
+            padding: 0px 25px
+        &__header
+            text-align: center
+        &__number
+            margin-right: 25px

@@ -1,0 +1,33 @@
+.coin
+    position: absolute
+    top: 0%
+    left: 0px
+    animation-name: coin-move
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    transform: translateY(-100%)
+    z-index: 1
+    &.coin--small
+        width: 30px
+    &__img
+        display: block
+        width: 100%
+        animation-name: coin-rotation
+        animation-duration: 3s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        &.coin__img--long
+            animation-duration: 5s
+
+@keyframes coin-rotation
+    0%
+        transform: rotateY(0deg)
+    100%
+        transform: rotateY(360deg)
+
+@keyframes coin-move
+    0%
+        top: 0%
+    100%
+        top: 100%

@@ -1,0 +1,23 @@
+.header
+    background-color: #F4F4F4
+    text-align: center
+    &.header--left
+        background-color: white
+        text-align: left
+    &__text
+        position: relative
+        max-width: 1300px
+        margin: 0 auto
+        padding: 48px 25px
+        font-family: "Gordita Bold"
+        font-size: 32px
+        line-height: 55px
+        z-index: 2
+
+@media (max-width: 850px)
+    .header
+        &.header--left
+            text-align: center
+        &__text
+            font-size: 24px
+            line-height: 44px
