@@ -239,6 +239,12 @@
     top: 100%;
   }
 }
+@media (max-width: 550px) {
+  .coin {
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
+}
 .info__inner {
   display: flex;
   justify-content: space-between;
